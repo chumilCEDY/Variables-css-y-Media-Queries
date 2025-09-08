@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EJEMPLOS</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Uso de Variables CSS y Media Queries</h1>
+        <p>Demostrando el uso de las media queries y también de las variables CSS.</p>
+
+        <div class="subcontenedor">
+            <p>Este bloque se redimensiona según el tamaño de la pantalla.</p>
+            <h3>Uso de Media Queries</h3>
+            <p>
+            Las Media queries le permiten aplicar estilos CSS según el tipo general de un dispositivo (como impresión o pantalla) u otras características como la resolución de la pantalla o el ancho del viewport del navegador. Las media queries se utilizan para lo siguiente:
+
+            Para aplicar estilos condicionalmente utilizando las reglas de arroba CSS @media e @import.
+            Para segmentar medios específicos para style, link, source y otros HTML con el atributo media=.
+            Para probar y monitorear los estados de los medios usando los métodos Window.matchMedia() y EventTarget.addEventListener().
+            Nota: Los ejemplos en esta página usan @media de CSS con fines ilustrativos, pero la sintaxis básica sigue siendo la misma para todos los tipos de consultas de medios.
+
+            In this article
+            Sintaxis
+            Destinos de tipos de medios
+            Destinos de características de los medios
+            Creación de media queries complejas
+            Mejoras de sintaxis en el nivel 4
+            Véase también
+            Sintaxis
+            Una media query se compone de un tipo de medio opcional y cualquier cantidad de expresiones de características de medios, que pueden combinarse opcionalmente de varias maneras usando operadores lógicos. Las consultas de medios no distinguen entre mayúsculas y minúsculas.
+
+            Los tipos de medios definen la amplia categoría de dispositivos para los que se aplica la consulta de medios: all, print, screen.
+
+            El tipo es opcional (se asume que es all) excepto cuando se usan los operadores lógicos not o only.
+
+            Las características multimedia describen una característica específica del user agent, dispositivo de salida o entorno:
+
+            any-hover
+            any-pointer
+            aspect-ratio
+            color
+            color-gamut
+            color-index
+            device-aspect-ratio Obsoleto
+            device-height Obsoleto
+            device-width Obsoleto
+            display-mode
+            dynamic-range
+            forced-colors
+            grid
+            height
+            hover
+            inverted-colors
+            monochrome
+            orientation
+            overflow-block
+            overflow-inline
+            pointer
+            prefers-color-scheme
+            prefers-contrast
+            prefers-reduced-motion
+            resolution
+            scripting
+            update
+            video-dynamic-range
+            width.
+            Por ejemplo, la característica hover permite que una consulta pruebe si el dispositivo admite el desplazamiento sobre los elementos. Las expresiones de características de medios comprueban su presencia o valor y son completamente opcionales. Cada expresión de característica de medios debe estar entre paréntesis.
+
+            Se pueden utilizar operadores lógicos para componer una media query compleja: not, and y only. También puede combinar múltiples media queries en una sola regla separándolas con comas.
+
+            Una media query se calcula como true cuando el tipo de medio (si se especifica) coincide con el dispositivo en el que se muestra un documento y todas las expresiones de características de medios se computan como verdaderas. Las consultas que involucran tipos de medios desconocidos siempre son falsas.
+            </p>
+        </div>
+        
+        <p>También use la variables css</p>
+        <p>Prube el uso de las media queries cambiando la dimension de la pantalla</p>
+    </div>
+</body>
+</html>
